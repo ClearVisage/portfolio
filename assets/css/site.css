@@ -459,7 +459,7 @@ button { font: inherit; color: inherit; }
 
 .fit { border-top: 1px solid var(--line-paper); }
 .fit__title {
-  padding: 22px 0 6px;
+  padding: 22px 0 14px;
   font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.08em;
