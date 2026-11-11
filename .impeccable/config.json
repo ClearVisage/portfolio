@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-11T13:16:44.394Z",
+        "reason": "Claude decision: display headings (hero 1.02, section titles 1.07, statement 1.14) use tight leading per Apple typography guidance; body text stays at 1.47"
+      }
+    ]
+  }
+}
