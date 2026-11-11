@@ -3,237 +3,460 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Aarón Revelo Jiménez</title>
-  <meta name="description" content="Portfolio de Aarón Revelo Jiménez: desarrollo web, tecnología y atención al cliente en Madrid.">
-  <meta name="theme-color" content="#fbfbfd" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
-  <meta property="og:title" content="Aarón Revelo Jiménez">
-  <meta property="og:description" content="Desarrollo web, tecnología y atención al cliente. Madrid.">
-  <meta property="og:image" content="assets/aaron.jpg">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231d1d1f'/%3E%3Ctext x='32' y='43' font-family='-apple-system,Helvetica,Arial' font-size='30' font-weight='600' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css">
+  <title>Aarón Revelo Jiménez · Soporte IT, atención al cliente y desarrollo web en Madrid</title>
+  <meta name="description" content="Portfolio de Aarón Revelo Jiménez, en Madrid. Atención al cliente y fidelización en Vodafone, estudiante de ASIR, desarrollo web freelance y cofundador de ADVERON junto a Nela. Proyectos reales y CV.">
+  <link rel="canonical" href="https://portfolio-six-delta-wnhrwzsiuf.vercel.app/">
+  <meta name="theme-color" content="#0d0d0e">
+  <meta name="color-scheme" content="dark light">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Aarón Revelo">
+  <meta property="og:title" content="Aarón Revelo · Tecnología, personas y soluciones reales">
+  <meta property="og:description" content="Atención al cliente, soporte IT y desarrollo web en Madrid. Tres proyectos publicados y CV descargable.">
+  <meta property="og:url" content="https://portfolio-six-delta-wnhrwzsiuf.vercel.app/">
+  <meta property="og:image" content="https://portfolio-six-delta-wnhrwzsiuf.vercel.app/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Aarón Revelo, portfolio: tecnología, personas y soluciones reales. Madrid.">
+  <meta property="profile:first_name" content="Aarón">
+  <meta property="profile:last_name" content="Revelo Jiménez">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter+Tight:wght@500;600;700&display=swap">
+  <link rel="preload" as="image" href="assets/img/aaron-400.webp" type="image/webp" imagesrcset="assets/img/aaron-400.webp 400w, assets/img/aaron-660.webp 660w" imagesizes="(min-width: 900px) 420px, 360px">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add('js')</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://portfolio-six-delta-wnhrwzsiuf.vercel.app/",
+    "inLanguage": "es",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Aarón Revelo Jiménez",
+      "url": "https://portfolio-six-delta-wnhrwzsiuf.vercel.app/",
+      "image": "https://portfolio-six-delta-wnhrwzsiuf.vercel.app/assets/img/aaron-660.jpg",
+      "email": "mailto:aaronrevelojimenez@gmail.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Madrid", "addressCountry": "ES" },
+      "worksFor": { "@type": "Organization", "name": "Vodafone" },
+      "knowsLanguage": ["es", "en", "it"],
+      "knowsAbout": ["Atención al cliente", "Fidelización", "Soporte técnico", "Redes", "Desarrollo web", "HTML", "CSS", "JavaScript", "Supabase"],
+      "alumniOf": { "@type": "EducationalOrganization", "name": "IES Francisco de Goya" },
+      "hasCredential": { "@type": "EducationalOccupationalCredential", "name": "Técnico en Sistemas Microinformáticos y Redes", "credentialCategory": "Formación Profesional de Grado Medio" }
+    }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#top" class="nav__brand">Aarón Revelo</a>
-      <nav class="nav__links" aria-label="Secciones">
-        <a href="#sobre-mi">Sobre mí</a>
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#inicio" aria-label="Aarón Revelo, inicio">
+        <span class="brand__mark" aria-hidden="true">AR</span>
+        <span>Aarón Revelo</span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#proyectos">Proyectos</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#competencias">Competencias</a>
-        <a href="#formacion">Formación</a>
+        <a href="#adveron">ADVERON</a>
+        <a href="#contacto">Contacto</a>
       </nav>
-      <a href="#contacto" class="pill pill--small">Contactar</a>
+      <a class="btn btn--light nav__cta" href="CV_Aaron_Revelo_Jimenez.pdf" download>Descargar CV</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú"><span></span></button>
     </div>
   </header>
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Principal (móvil)">
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#competencias">Competencias</a>
+      <a href="#adveron">ADVERON</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn--accent" href="CV_Aaron_Revelo_Jimenez.pdf" download>Descargar CV</a>
+    </nav>
+  </div>
 
-  <main id="top">
+  <main id="main">
 
-    <!-- HERO -->
-    <section class="hero">
-      <p class="eyebrow reveal">Desarrollo web · Tecnología · Atención al cliente</p>
-      <h1 class="hero__title reveal">Aarón Revelo.</h1>
-      <p class="hero__lead reveal">Tecnología con trato humano.</p>
-      <div class="hero__ctas reveal">
-        <a href="#contacto" class="pill">Hablemos</a>
-        <a href="CV_Aaron_Revelo_Jimenez.pdf" class="link-chevron" download>Descargar CV</a>
-      </div>
-      <figure class="hero__portrait reveal">
-        <img src="assets/aaron.jpg" alt="Retrato de Aarón Revelo Jiménez" width="660" height="896">
-      </figure>
-    </section>
-
-    <!-- QUICK FACTS -->
-    <section class="facts" aria-label="En resumen">
-      <div class="facts__grid">
-        <div class="fact reveal"><span class="fact__value">3</span><span class="fact__label">áreas: clientes, sistemas y web</span></div>
-        <div class="fact reveal"><span class="fact__value">3</span><span class="fact__label">idiomas: español, inglés e italiano</span></div>
-        <div class="fact reveal"><span class="fact__value">ASIR</span><span class="fact__label">estudiante en PlanetaFP · Técnico en SMR</span></div>
-        <div class="fact reveal"><span class="fact__value">Madrid</span><span class="fact__label">disponible en remoto y presencial</span></div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section section--light" id="sobre-mi">
-      <div class="container narrow">
-        <p class="eyebrow reveal">Sobre mí</p>
-        <p class="statement reveal">
-          Combino la <span class="hl">comunicación</span> y la orientación al cliente con
-          <span class="hl">conocimientos tecnológicos</span> para gestionar proyectos
-          de principio a fin, <span class="muted">con iniciativa, capacidad de adaptación y una forma práctica de resolver problemas.</span>
-        </p>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section class="section" id="experiencia">
-      <div class="container">
-        <header class="section__head">
-          <p class="eyebrow reveal">Experiencia</p>
-          <h2 class="section__title reveal">Donde he estado trabajando.</h2>
-        </header>
-
-        <div class="cards">
-          <article class="card reveal">
-            <div class="card__top">
-              <span class="badge badge--live">Actualidad</span>
-              <span class="card__date">Ago 2026 – hoy</span>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div>
+            <p class="hero__status"><span class="dot" aria-hidden="true"></span>Madrid · Abierto a nuevas oportunidades profesionales</p>
+            <h1 class="hero__title display" id="hero-title">
+              <span class="hero__name">Aarón Revelo</span>
+              <span class="hero__claim">Tecnología, <span class="serif">personas</span> y soluciones reales.</span>
+            </h1>
+            <p class="hero__sub">
+              Atiendo y fidelizo clientes en <strong>Vodafone</strong>, estudio <strong>ASIR</strong>,
+              desarrollo webs para negocios y estoy construyendo <strong>ADVERON</strong> junto a Nela.
+              Me muevo cómodo entre la parte técnica y la conversación con quien la usa.
+            </p>
+            <div class="actions">
+              <a class="btn btn--accent" href="#proyectos">Ver proyectos</a>
+              <a class="btn btn--ghost" href="CV_Aaron_Revelo_Jimenez.pdf" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+                Descargar CV <span class="sr-only">(PDF, 175 KB)</span>
+              </a>
+              <a class="link" href="#contacto">Contactar</a>
             </div>
-            <h3 class="card__company">Vodafone</h3>
-            <p class="card__role">Atención al cliente y fidelización</p>
-            <ul class="card__list">
-              <li>Atiendo y asesoro a clientes, identifico lo que necesitan y les ofrezco la solución adecuada.</li>
-              <li>Fidelización y retención con comunicación clara, escucha activa y orientación comercial.</li>
+          </div>
+
+          <figure class="portrait">
+            <picture>
+              <source type="image/webp" srcset="assets/img/aaron-400.webp 400w, assets/img/aaron-660.webp 660w" sizes="(min-width: 900px) 420px, 360px">
+              <img src="assets/img/aaron-400.jpg" srcset="assets/img/aaron-400.jpg 400w, assets/img/aaron-660.jpg 660w" sizes="(min-width: 900px) 420px, 360px" width="400" height="543" alt="Retrato de Aarón Revelo Jiménez" fetchpriority="high">
+            </picture>
+            <figcaption><strong>Aarón Revelo Jiménez</strong>Madrid, España</figcaption>
+          </figure>
+        </div>
+
+        <dl class="snapshot" aria-label="Resumen rápido">
+          <div class="reveal"><dt>Trabajo</dt><dd>Vodafone<span>Atención al cliente y fidelización</span></dd></div>
+          <div class="reveal"><dt>Estudio</dt><dd>ASIR · PlanetaFP<span>Técnico en SMR completado</span></dd></div>
+          <div class="reveal"><dt>Construyo</dt><dd>ADVERON, con Nela<span>Diseño web y soluciones digitales</span></dd></div>
+          <div class="reveal"><dt>Idiomas</dt><dd>Español · Inglés · Italiano<span>Nativo · avanzado · intermedio</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section paper" id="perfil" aria-labelledby="perfil-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker reveal">Sobre mí</p>
+          <h2 class="h2 reveal" id="perfil-title">Entiendo la tecnología <span class="serif">y sé explicarla.</span></h2>
+        </div>
+
+        <div class="about">
+          <div class="about__story reveal">
+            <p>Empecé por la parte técnica: me formé en <strong>Sistemas Microinformáticos y Redes</strong> e hice prácticas en Iberoptics preparando equipos, revisando conexiones y detectando incidencias.</p>
+            <p>Hoy paso buena parte del día hablando con clientes en <strong>Vodafone</strong>: escuchar, entender qué necesitan y darles una solución que tenga sentido para ellos. En paralelo diseño y desarrollo webs para negocios, y con Nela estoy construyendo <strong>ADVERON</strong>.</p>
+            <p>Esa mezcla es lo que aporto: puedo resolver un problema técnico y también contárselo con claridad a quien no tiene por qué saber de tecnología. Sigo formándome en <strong>ASIR</strong> en PlanetaFP.</p>
+          </div>
+
+          <div class="reveal">
+            <ul class="fit" aria-labelledby="fit-title">
+              <li class="fit__title" id="fit-title">Dónde puedo aportar</li>
+              <li><strong>Soporte IT y helpdesk</strong><span>SMR, prácticas de soporte técnico y ASIR en curso.</span></li>
+              <li><strong>Soporte de aplicaciones y CRM</strong><span>Trato diario con clientes y experiencia construyendo webs conectadas a bases de datos.</span></li>
+              <li><strong>Customer success y atención B2B</strong><span>Asesoramiento, fidelización y retención en Vodafone.</span></li>
+              <li><strong>Desarrollo web junior</strong><span>Tres proyectos publicados que se pueden visitar hoy.</span></li>
+              <li><strong>Operaciones</strong><span>Gestión de proyectos con clientes, de la propuesta a la publicación.</span></li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="proyectos" aria-labelledby="proyectos-title">
+      <div class="wrap">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="kicker reveal">Proyectos</p>
+            <h2 class="h2 reveal" id="proyectos-title">Trabajo publicado <span class="serif">que puedes abrir.</span></h2>
+          </div>
+          <p class="lede reveal">Tres webs en producción. Cada una tiene su caso con lo que se construyó, cómo funciona y qué tecnología usa, comprobado sobre la web real.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" aria-labelledby="p1-title">
+            <a class="project__media" href="proyectos/la-nota-barber.html" tabindex="-1" aria-hidden="true">
+              <picture>
+                <source type="image/webp" srcset="assets/img/la-nota-barber-800.webp 800w, assets/img/la-nota-barber-1440.webp 1440w" sizes="(min-width: 900px) 680px, 100vw">
+                <img src="assets/img/la-nota-barber-800.webp" width="800" height="500" loading="lazy" decoding="async" alt="">
+              </picture>
+            </a>
+            <div class="project__body">
+              <p class="project__meta"><span class="project__index">01</span><span>Web para barbería · Ciudad Lineal, Madrid</span></p>
+              <h3 class="project__title" id="p1-title"><a href="proyectos/la-nota-barber.html">La Nota Barber</a></h3>
+              <p class="project__desc">Identidad clásica con aire contemporáneo. Servicios y catálogo que se actualizan desde un panel privado, galería, mapa y reserva de cita a través de Booksy.</p>
+              <ul class="tags" aria-label="Tecnología">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Supabase</li><li>Booksy</li>
+              </ul>
+              <div class="actions">
+                <a class="btn btn--light" href="proyectos/la-nota-barber.html">Ver caso</a>
+                <a class="link" href="https://lanotabarber.vercel.app/" target="_blank" rel="noopener">Visitar web <span class="sr-only">(se abre en una pestaña nueva)</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+            </div>
           </article>
 
-          <article class="card card--dark reveal">
-            <div class="card__top">
-              <span class="badge badge--live">Actualidad</span>
-              <span class="card__date">May 2026 – hoy</span>
+          <article class="project reveal" aria-labelledby="p2-title">
+            <a class="project__media" href="proyectos/medellin-studio.html" tabindex="-1" aria-hidden="true">
+              <picture>
+                <source type="image/webp" srcset="assets/img/medellin-studio-800.webp 800w, assets/img/medellin-studio-1440.webp 1440w" sizes="(min-width: 900px) 680px, 100vw">
+                <img src="assets/img/medellin-studio-800.webp" width="800" height="500" loading="lazy" decoding="async" alt="">
+              </picture>
+            </a>
+            <div class="project__body">
+              <p class="project__meta"><span class="project__index">02</span><span>Web multipágina para barbería · Madrid</span></p>
+              <h3 class="project__title" id="p2-title"><a href="proyectos/medellin-studio.html">Medellín Studio</a></h3>
+              <p class="project__desc">Propuesta oscura y cinematográfica en seis páginas. Servicios y galería gestionados desde un panel privado, y un recorrido claro hasta la agenda de Booksy.</p>
+              <ul class="tags" aria-label="Tecnología">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Supabase</li><li>Booksy</li>
+              </ul>
+              <div class="actions">
+                <a class="btn btn--light" href="proyectos/medellin-studio.html">Ver caso</a>
+                <a class="link" href="https://medellinstudio.vercel.app/" target="_blank" rel="noopener">Visitar web <span class="sr-only">(se abre en una pestaña nueva)</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
             </div>
-            <h3 class="card__company">Freelance</h3>
-            <p class="card__role">Desarrollo web</p>
-            <ul class="card__list">
-              <li>Diseño y desarrollo webs para negocios, adaptadas a sus objetivos y a su imagen.</li>
-              <li>Interfaces en HTML, CSS y JavaScript con formularios y sistemas de reservas.</li>
-              <li>Gestión del proyecto, trato directo con el cliente, publicación y mantenimiento.</li>
-            </ul>
           </article>
 
-          <article class="card reveal">
-            <div class="card__top">
-              <span class="badge">Prácticas</span>
-              <span class="card__date">Feb – Jun 2026</span>
+          <article class="project reveal" aria-labelledby="p3-title">
+            <a class="project__media" href="proyectos/adveron.html" tabindex="-1" aria-hidden="true">
+              <picture>
+                <source type="image/webp" srcset="assets/img/adveron-800.webp 800w, assets/img/adveron-1440.webp 1440w" sizes="(min-width: 900px) 680px, 100vw">
+                <img src="assets/img/adveron-800.webp" width="800" height="500" loading="lazy" decoding="async" alt="">
+              </picture>
+            </a>
+            <div class="project__body">
+              <p class="project__meta"><span class="project__index">03</span><span class="label label--accent">Proyecto empresarial · con Nela</span></p>
+              <h3 class="project__title" id="p3-title"><a href="proyectos/adveron.html">ADVERON</a></h3>
+              <p class="project__desc">La web de nuestro proyecto de diseño web, mantenimiento y soluciones digitales: servicios, proceso en cinco fases, calculadora de presupuesto orientativo y versión en inglés.</p>
+              <ul class="tags" aria-label="Tecnología">
+                <li>HTML</li><li>CSS</li><li>JavaScript</li><li>ES / EN</li>
+              </ul>
+              <div class="actions">
+                <a class="btn btn--light" href="proyectos/adveron.html">Ver caso</a>
+                <a class="link" href="https://adveron-gamma.vercel.app/" target="_blank" rel="noopener">Visitar web <span class="sr-only">(se abre en una pestaña nueva)</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
             </div>
-            <h3 class="card__company">Iberoptics</h3>
-            <p class="card__role">Becario · Soporte técnico</p>
-            <ul class="card__list">
-              <li>Mantenimiento, preparación y configuración de equipos informáticos.</li>
-              <li>Revisión de cableado y conexiones, detección y comunicación de incidencias.</li>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="section paper" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker reveal">Experiencia</p>
+          <h2 class="h2 reveal" id="experiencia-title">Clientes, sistemas <span class="serif">y proyectos propios.</span></h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="job job--now reveal">
+            <p class="job__when">Ago 2026 – actualidad</p>
+            <div class="job__body">
+              <div class="job__head"><h3 class="job__org">Vodafone</h3><span class="job__role">Atención al cliente y fidelización</span></div>
+              <ul>
+                <li>Atiendo y asesoro a clientes: identifico qué necesitan y les ofrezco la solución adecuada.</li>
+                <li>Fidelización y retención con comunicación clara, escucha activa y orientación comercial.</li>
+              </ul>
+              <ul class="tags" aria-label="Competencias"><li>Escucha activa</li><li>Retención</li><li>Asesoramiento</li><li>Comunicación comercial</li></ul>
+            </div>
+          </li>
+
+          <li class="job job--now reveal">
+            <p class="job__when">En desarrollo</p>
+            <div class="job__body">
+              <div class="job__head"><h3 class="job__org">ADVERON</h3><span class="job__role">Proyecto empresarial, junto a Nela</span></div>
+              <ul>
+                <li>Construimos y gestionamos entre los dos una propuesta de diseño web, mantenimiento y soluciones digitales para negocios.</li>
+                <li>Definición de servicios y planes, proceso de trabajo, presupuestos y web en español e inglés.</li>
+              </ul>
+              <ul class="tags" aria-label="Competencias"><li>Iniciativa</li><li>Diseño de servicios</li><li>Organización</li></ul>
+            </div>
+          </li>
+
+          <li class="job job--now reveal">
+            <p class="job__when">May 2026 – actualidad</p>
+            <div class="job__body">
+              <div class="job__head"><h3 class="job__org">Freelance</h3><span class="job__role">Desarrollo web</span></div>
+              <ul>
+                <li>Diseño y desarrollo de webs para negocios, adaptadas a sus objetivos y a su imagen.</li>
+                <li>Interfaces en HTML, CSS y JavaScript con contenido gestionable y enlaces a sistemas de reserva.</li>
+                <li>Trato directo con el cliente, publicación y mantenimiento de los sitios.</li>
+              </ul>
+              <ul class="tags" aria-label="Competencias"><li>HTML · CSS · JS</li><li>Supabase</li><li>Gestión de proyectos</li></ul>
+            </div>
+          </li>
+
+          <li class="job reveal">
+            <p class="job__when">Feb – Jun 2026</p>
+            <div class="job__body">
+              <div class="job__head"><h3 class="job__org">Iberoptics</h3><span class="job__role">Prácticas · Soporte técnico</span></div>
+              <ul>
+                <li>Mantenimiento, preparación y configuración de equipos informáticos.</li>
+                <li>Revisión de cableado y conexiones, detección de incidencias y comunicación de problemas técnicos.</li>
+              </ul>
+              <ul class="tags" aria-label="Competencias"><li>Hardware</li><li>Redes y cableado</li><li>Incidencias</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section" id="competencias" aria-labelledby="competencias-title">
+      <div class="wrap">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="kicker reveal">Competencias</p>
+            <h2 class="h2 reveal" id="competencias-title">Lo técnico <span class="serif">y lo humano.</span></h2>
+          </div>
+          <p class="lede reveal">Separo lo que uso en proyectos publicados de lo que conozco por formación, para que sepas exactamente qué esperar.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill reveal">
+            <h3>Desarrollo web y herramientas</h3>
+            <div class="skill__group">
+              <span class="skill__label">En proyectos publicados</span>
+              <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Supabase</li></ul>
+            </div>
+            <div class="skill__group">
+              <span class="skill__label">También trabajo con</span>
+              <ul class="tags"><li>Python</li><li>Bases de datos</li><li>Ofimática</li></ul>
+            </div>
+          </div>
+
+          <div class="skill reveal">
+            <h3>Sistemas y soporte IT</h3>
+            <p>Lo que aprendí en SMR y apliqué en prácticas, y lo que estoy ampliando en ASIR.</p>
+            <ul class="tags"><li>Windows</li><li>Mantenimiento de equipos</li><li>Redes</li><li>Configuración de dispositivos</li><li>Cableado e incidencias</li></ul>
+          </div>
+
+          <div class="skill reveal">
+            <h3>Atención al cliente, asesoramiento y gestión</h3>
+            <p>Mi día a día en Vodafone y el trato directo con los negocios para los que trabajo.</p>
+            <ul class="tags"><li>Atención al cliente</li><li>Fidelización y retención</li><li>Asesoramiento</li><li>Comunicación comercial</li></ul>
+          </div>
+
+          <div class="skill reveal">
+            <h3>Organización, comunicación e iniciativa</h3>
+            <p>Lo que hace falta para sacar adelante proyectos propios.</p>
+            <ul class="tags"><li>Comunicación y escucha activa</li><li>Trabajo en equipo</li><li>Organización</li><li>Aprendizaje rápido</li><li>Autonomía</li><li>Resolución de problemas</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="section section--tight paper" id="formacion" aria-labelledby="formacion-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker reveal">Formación e idiomas</p>
+          <h2 class="h2 reveal" id="formacion-title">Base técnica, <span class="serif">en crecimiento.</span></h2>
+        </div>
+        <div class="edu-grid">
+          <article class="edu reveal">
+            <span class="label label--accent">En curso</span>
+            <h3>Administración de Sistemas Informáticos en Red (ASIR)</h3>
+            <p>Grado Superior · PlanetaFP</p>
+          </article>
+          <article class="edu reveal">
+            <span class="label">Completado</span>
+            <h3>Sistemas Microinformáticos y Redes (SMR)</h3>
+            <p>Grado Medio · IES Francisco de Goya, Madrid</p>
+          </article>
+          <article class="edu reveal">
+            <span class="label">Idiomas</span>
+            <h3 class="sr-only">Idiomas</h3>
+            <ul class="langs">
+              <li><span>Español</span><span>Nativo</span></li>
+              <li><span>Inglés</span><span>Avanzado</span></li>
+              <li><span>Italiano</span><span>Intermedio</span></li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS BENTO -->
-    <section class="section section--light" id="competencias">
-      <div class="container">
-        <header class="section__head">
-          <p class="eyebrow reveal">Competencias</p>
-          <h2 class="section__title reveal">Lo que sé hacer.</h2>
-        </header>
-
-        <div class="bento">
-          <div class="tile tile--wide tile--dark reveal">
-            <p class="tile__kicker">Desarrollo digital</p>
-            <h3 class="tile__title">Webs que funcionan<br>y se ven bien.</h3>
-            <ul class="chips">
-              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Supabase</li><li>Bases de datos</li><li>Ofimática</li>
-            </ul>
-          </div>
-
-          <div class="tile reveal">
-            <p class="tile__kicker">Atención y ventas</p>
-            <h3 class="tile__title">Personas primero.</h3>
-            <ul class="plain">
-              <li>Atención al cliente</li><li>Fidelización</li><li>Asesoramiento</li><li>Comunicación comercial</li>
-            </ul>
-          </div>
-
-          <div class="tile reveal">
-            <p class="tile__kicker">Informática y tecnología</p>
-            <h3 class="tile__title">Sistemas que no fallan.</h3>
-            <ul class="plain">
-              <li>Windows</li><li>Mantenimiento de equipos</li><li>Redes</li><li>Configuración de dispositivos</li>
-            </ul>
-          </div>
-
-          <div class="tile reveal">
-            <p class="tile__kicker">Idiomas</p>
-            <h3 class="tile__title">Hablo tu idioma.</h3>
-            <div class="langs">
-              <div class="lang"><div class="lang__row"><span>Español</span><span class="muted">Nativo</span></div><div class="meter"><span style="--v:1"></span></div></div>
-              <div class="lang"><div class="lang__row"><span>Inglés</span><span class="muted">Avanzado</span></div><div class="meter"><span style="--v:.8"></span></div></div>
-              <div class="lang"><div class="lang__row"><span>Italiano</span><span class="muted">Intermedio</span></div><div class="meter"><span style="--v:.55"></span></div></div>
-            </div>
-          </div>
-
-          <div class="tile tile--wide tile--accent reveal">
-            <p class="tile__kicker">Habilidades</p>
-            <h3 class="tile__title">Cómo trabajo.</h3>
-            <ul class="skills">
-              <li>Comunicación y escucha activa</li>
-              <li>Trabajo en equipo y colaboración</li>
-              <li>Organización y responsabilidad</li>
-              <li>Adaptabilidad y aprendizaje rápido</li>
-              <li>Iniciativa y autonomía</li>
-              <li>Resolución de problemas</li>
-            </ul>
+    <!-- ===================== ADVERON ===================== -->
+    <section class="section ink-2" id="adveron" aria-labelledby="adveron-title">
+      <div class="wrap venture">
+        <div>
+          <p class="kicker reveal">Emprendimiento</p>
+          <h2 class="h2 reveal" id="adveron-title">Construyendo ADVERON <span class="serif">con Nela.</span></h2>
+          <p class="lede reveal">ADVERON es el proyecto empresarial que estamos levantando entre los dos: diseño web, mantenimiento y soluciones digitales para negocios. Está empezando, y lo contamos así. Esto es lo que me está enseñando:</p>
+          <ul class="learn reveal">
+            <li><strong>Tratar con clientes</strong><span>Entender el negocio antes de proponer nada.</span></li>
+            <li><strong>Diseñar servicios</strong><span>Planes con alcance claro y precios orientativos por escrito.</span></li>
+            <li><strong>Organizar proyectos</strong><span>Un proceso en cinco fases con revisión antes de avanzar.</span></li>
+            <li><strong>Crear propuestas</strong><span>Demos funcionales para enseñar en lugar de prometer.</span></li>
+            <li><strong>Gestionar un negocio</strong><span>Presupuestos, textos legales, dos idiomas y reparto de trabajo.</span></li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn--light" href="https://adveron-gamma.vercel.app/" target="_blank" rel="noopener">Visitar ADVERON <span class="sr-only">(se abre en una pestaña nueva)</span></a>
+            <a class="link" href="proyectos/adveron.html">Ver el caso completo</a>
           </div>
         </div>
+        <figure class="venture__card venture__aside reveal">
+          <picture>
+            <source type="image/webp" srcset="assets/img/adveron-demos-800.webp 800w, assets/img/adveron-demos-1440.webp 1440w" sizes="(min-width: 960px) 560px, 100vw">
+            <img src="assets/img/adveron-demos-800.webp" width="800" height="544" loading="lazy" decoding="async" alt="Sección de portfolio de la web de ADVERON con cuatro webs de demostración: Vértice Arquitectura, Taller Nogal, Casa Marea y Altura Guías.">
+          </picture>
+          <figcaption>Las cuatro webs del portfolio de ADVERON son demos de negocios ficticios, y así se indica en la propia web.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <!-- EDUCATION -->
-    <section class="section" id="formacion">
-      <div class="container">
-        <header class="section__head">
-          <p class="eyebrow reveal">Formación</p>
-          <h2 class="section__title reveal">Siempre aprendiendo.</h2>
-        </header>
-        <div class="edu-list">
-          <div class="edu reveal">
-            <div class="edu__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></svg>
-            </div>
-            <div>
-              <span class="badge badge--live">En curso</span>
-              <h3 class="edu__title">Técnico Superior en Administración de Sistemas Informáticos en Red (ASIR)</h3>
-              <p class="edu__place">PlanetaFP · Estudiante activo</p>
-            </div>
-          </div>
-          <div class="edu reveal">
-            <div class="edu__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
-            </div>
-            <div>
-              <span class="badge">Completado</span>
-              <h3 class="edu__title">Técnico en Sistemas Microinformáticos y Redes (SMR)</h3>
-              <p class="edu__place">IES Francisco de Goya · Madrid</p>
-            </div>
-          </div>
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contacto" aria-labelledby="contacto-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker reveal">Contacto</p>
+          <h2 class="h2 reveal" id="contacto-title">Hablemos. <span class="serif">Elige tu camino.</span></h2>
         </div>
-      </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section class="contact" id="contacto">
-      <div class="container narrow center">
-        <p class="eyebrow reveal">Contacto</p>
-        <h2 class="contact__title reveal">Hablemos.</h2>
-        <p class="contact__lead reveal">¿Necesitas una web para tu negocio o alguien que cuide de tus clientes? Escríbeme.</p>
-        <div class="contact__ctas reveal">
-          <a href="mailto:aaronrevelojimenez@gmail.com" class="pill pill--large">aaronrevelojimenez@gmail.com</a>
+        <div class="contact-grid">
+          <article class="path path--primary reveal" aria-labelledby="path-jobs">
+            <p class="kicker">Reclutadores y empresas</p>
+            <h3 id="path-jobs">¿Buscas a alguien para tu equipo?</h3>
+            <p class="path__text">Me interesan puestos de soporte IT, soporte de aplicaciones, CRM, customer success, atención B2B, operaciones y desarrollo web. Te respondo por email.</p>
+            <div class="actions">
+              <a class="btn btn--dark" href="mailto:aaronrevelojimenez@gmail.com?subject=Oportunidad%20profesional%20%E2%80%93%20Aar%C3%B3n%20Revelo">Escribirme un email</a>
+              <a class="btn btn--ghost" href="CV_Aaron_Revelo_Jimenez.pdf" download>Descargar CV <span class="sr-only">(PDF)</span></a>
+            </div>
+            <p class="path__meta">
+              <a href="mailto:aaronrevelojimenez@gmail.com">aaronrevelojimenez@gmail.com</a>
+              <a href="tel:+34643805147">643 805 147</a>
+              <span>Madrid</span>
+            </p>
+          </article>
+
+          <article class="path reveal" aria-labelledby="path-biz">
+            <p class="kicker">Negocios</p>
+            <h3 id="path-biz">¿Necesitas una web para tu negocio?</h3>
+            <p class="path__text">Los proyectos para negocios los llevamos Nela y yo a través de ADVERON. Allí puedes calcular un presupuesto orientativo y escribirnos.</p>
+            <div class="actions">
+              <a class="btn btn--light" href="https://adveron-gamma.vercel.app/#contacto" target="_blank" rel="noopener">Pedir presupuesto <span class="sr-only">en ADVERON (se abre en una pestaña nueva)</span></a>
+            </div>
+            <p class="path__meta"><a href="mailto:hola@adveron.com">hola@adveron.com</a></p>
+          </article>
         </div>
-        <ul class="contact__meta reveal">
-          <li><a href="tel:+34643805147">643 805 147</a></li>
-          <li>Madrid, España</li>
-          <li><a href="CV_Aaron_Revelo_Jimenez.pdf" class="link-chevron" download>CV en PDF</a></li>
-        </ul>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer__inner">
-      <span>© <span id="year">2026</span> Aarón Revelo Jiménez.</span>
-      <span>Diseñado y desarrollado en Madrid.</span>
+    <div class="wrap footer__inner">
+      <p>© <span data-year>2026</span> Aarón Revelo Jiménez · Madrid</p>
+      <nav aria-label="Pie de página">
+        <a href="#proyectos">Proyectos</a>
+        <a href="CV_Aaron_Revelo_Jimenez.pdf" download>CV en PDF</a>
+        <a href="mailto:aaronrevelojimenez@gmail.com">Email</a>
+        <a href="https://adveron-gamma.vercel.app/" target="_blank" rel="noopener">ADVERON</a>
+      </nav>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="assets/js/site.js" defer></script>
 </body>
 </html>
