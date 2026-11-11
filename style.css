@@ -13,7 +13,7 @@
   --text-3: #6e6e73;
   --line: rgba(0, 0, 0, 0.08);
   --accent: #0071e3;
-  --accent-hover: #0077ed;
+  --accent-hover: #0062c4;
   --accent-text: #0066cc;
   --live: #12753d;
   --dark: #000000;
@@ -37,8 +37,8 @@
     --text-2: #a1a1a6;
     --text-3: #86868b;
     --line: rgba(255, 255, 255, 0.1);
-    --accent: #0a84ff;
-    --accent-hover: #2b95ff;
+    --accent: #0071e3;
+    --accent-hover: #0062c4;
     --accent-text: #2997ff;
     --live: #30d158;
     --dark-surface: #1c1c1e;
@@ -472,8 +472,8 @@ h1, h2, h3, p { margin: 0; }
   line-height: 1.45;
 }
 .contact__ctas { margin-top: 40px; }
-.contact .pill { background: #0a84ff; }
-.contact .pill:hover { background: #2b95ff; }
+.contact .pill { background: #0071e3; }
+.contact .pill:hover { background: #0062c4; }
 .contact__meta {
   margin-top: 36px;
   display: flex;
@@ -525,3 +525,7 @@ h1, h2, h3, p { margin: 0; }
   :root { --text-2: var(--text); --line: rgba(127, 127, 127, 0.6); }
   .card, .tile, .edu { outline: 1px solid var(--line); }
 }
+
+/* Education list */
+.edu-list { display: grid; gap: 16px; }
+.edu .badge { display: inline-flex; margin-bottom: 10px; }
